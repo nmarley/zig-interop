@@ -1,0 +1,5 @@
+driver
+*.o
+*.so
+*.dylib
+*.a
