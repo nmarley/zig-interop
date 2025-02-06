@@ -3,6 +3,8 @@ ZIG = zig
 
 all: driver
 
+libadd.a: zig
+
 # Build static library with Zig, defaults to output `libadd.a`
 zig: add.cpp
 	$(ZIG) build-lib add.cpp -static -target x86_64-macos.12.0 -lc -lc++
